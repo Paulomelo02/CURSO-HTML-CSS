@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+* { 
+    padding: 10px;
+}
 
 :root {
     --CORDEL:'Passion One', sans-serif;
@@ -14,6 +17,10 @@
 
 header {
     background-color: black;
+    width: 802px;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+    margin: auto;
 }
 
 h1 {
@@ -49,18 +56,81 @@ main{
     background-color: white;
     border: 1px solid black;
     font-family: var(--Srira);
+    width: 800px;
+    margin: auto;
+
+}
+
+.s1{
+    text-transform: uppercase;
+}
+
+.s2{
+    text-transform: uppercase;
+}
+
+.s3{
+    text-transform: uppercase;
 }
 
 #q1{
-    background: black url('img/background002.jpg') center center no-repeat fixed;
+    background-color: black;
+    background-image: url('../img/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
-    
+    background-attachment: fixed;
+    height:100% 100%; 
+
+   
 }
 
 
 #q1>p{
-color: black;
-text-align: justify;
-font-family: var(--Srira);
+    background-color:rgba(255, 255, 255, 0.253);
+    font-family: var(--Srira);
+    color:white;
+    border:1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    text-align: justify;
+    height: 100%;
+}
+
+#q2{
+    background-color: black;
+    background-image: url('../img/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100% 100%;  
+    
+}
+
+#q2>p{
+    background-color:rgba(255, 255, 255, 0.342);
+    font-family: var(--Srira);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-bottom-right-radius:5px ;
+    border-bottom-left-radius: 5px;
+    margin: auto;
+    padding: 0px;
+    width: 822px;
+}
+
+footer >  a{
+    text-decoration: none;
+    color: white;
 }
