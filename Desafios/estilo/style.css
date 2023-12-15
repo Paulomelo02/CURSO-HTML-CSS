@@ -7,11 +7,17 @@
 
 * { 
     padding: 10px;
+    margin: 0px;
 }
 
 :root {
     --CORDEL:'Passion One', sans-serif;
     --Srira: 'Sriracha', cursive;
+}
+
+html,body {
+    min-height: 100vh;
+    
 }
 
 
@@ -92,9 +98,10 @@ main{
     color:white;
     border:1px solid black;
     border-radius: 10px;
-    width: 200px;
+    display: inline-block;
     text-align: justify;
     height: 100%;
+    text-shadow: 2px 2px black;
 }
 
 #q2{
@@ -109,14 +116,15 @@ main{
 }
 
 #q2>p{
-    background-color:rgba(255, 255, 255, 0.342);
+    background-color:rgba(0, 0, 0, 0.493);
     font-family: var(--Srira);
-    color: black;
+    color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 10px;
-    width: 200px;
+    display: inline-block;
     height: 100%;
     text-align: justify;
+    text-shadow: 2px 2px black;
 }
 
 footer{
