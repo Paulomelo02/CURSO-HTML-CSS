@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            background-color: lightgrey;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: auto;
+            padding: 0px;
+            width: 500px;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid black;
+
+        }
+
+        td , th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+        }
+        thead{
+            background-color:gray;
+            color: white;
+        }
+
+        .Number{
+            text-align: right;
+            
+        }
+
+        tfoot{
+            background-color: gray ;
+            color: white;
+        }
+        .Zebra{
+            background-color: lightgrey;
+        
+        }
+        .Zebra:hover{
+            color: white;
+            background-color: black;
+            transition-duration: 0.5s;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">Populaçãos</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                     <td>São paulo</td>
+                     <td class="Number">41 262 199</td>
+                </tr>
+                <tr>
+                    <td class="Zebra">Minas Gerais</td>
+                    <td class="Number">20 538 718</td>
+                </tr>
+                <td>Rio de Janeiro</td>
+                <td class="Number">16 054 524</td>
+                <tr>
+                    <td class="Zebra">Bahia</td>
+                    <td class="Number">14 141 626</td>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="Number">11 444 380</td>
+                <tr>
+                    <td class="Zebra">Rio grande do Sul</td>
+                    <td class="Number">10 882 965</td>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="Number">9 058 931</td>
+                <tr>
+                    <td class="Zebra">Ceará</td>
+                    <td class="Number">8 794 957</td>
+                <tr>
+                    <td>Pará</td>
+                    <td class="Number">8 121 025</td>
+                <tr>
+                    <td class="Zebra">Santa Catarina</td>
+                    <td class="Number">7 610 361</td>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="Number">7 056 495</td>
+                <tr>
+                    <td class="Zebra">Maranhão</td>
+                    <td class="Number">6 775 805</td>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="Number">3 974 687</td>
+                <tr>
+                    <td class="Zebra">Amazonas</td>
+                    <td class="Number">3 941 613</td>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="Number">3 833 712</td>
+                <tr>
+                    <td class="Zebra">Mato grosso</td>
+                    <td class="Number">3 658 649</td>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="Number">3 302 729</td>
+                <tr>
+                    <td class="Zebra">Piauí</td>
+                    <td class="Number">3 272 199</td>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="Number">3 127 683</td>
+                <tr>
+                    <td class="Zebra">Distrito Federal</td>
+                    <td class="Number">2 817 381</td>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="Number">2 757 013</td>
+                <tr>
+                    <td class="Zebra">Sergipe</td>
+                    <td class="Number">2 209 558</td>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="Number">1 581 196</td>
+                <tr>
+                    <td class="Zebra">Tocantins</td>
+                    <td class="Number">1 511 460</td>
+                <tr>
+                    <td>Acre</td>
+                    <td class="Number">830 018	</td>
+                <tr>
+                    <td class="Zebra">Amapá</td>
+                    <td class="Number">733 759</td>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="Number">636 707</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>203 062 512</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
