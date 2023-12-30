@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse:collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle;/*Alinhamento Vertical*/
+            text-align: center;/*Alinhamneto Horizontal*/
+        }
+        .q1:hover {
+            background-color: rgba(0, 0, 0, 0.507);
+
+        }
+
+        .q2:hover {
+            text-decoration: underline;
+            background-color: red;
+            transition-duration: 1.0s;
+        }
+
+        .q3:hover {
+            text-decoration: underline;
+            background-color: lightgray;
+            transition-duration: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1> Minha Primeira tabela</h1>
+    <!--
+        Hierarquia de Tabelas (Simples)
+            Table = Tabela
+                Table Row = Lnha de Tabela
+                    Table Header = Cabeçalho de Tabela
+                    Table Data = Dados de Tabelas
+    -->
+    <table>
+        <tr class="q1">
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr class="q2">
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr class="q3">
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
