@@ -20,6 +20,7 @@
         table{
             margin: auto;
             width: 500px;
+            position: relative;
         }
 
         caption{
@@ -36,9 +37,18 @@
             text-align: center;
 
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            
+        }
+
+
         thead{
             background-color:gray;
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         .Number{
@@ -48,7 +58,7 @@
 
         tfoot{
             background-color: gray ;
-            color: white;
+            color: rgb(0, 0, 0);
         }
         .Zebra{
             background-color: lightgrey;
